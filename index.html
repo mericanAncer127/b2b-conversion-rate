@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Conversion Rate Measure</title>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="d-flex gap-4 p-4"> <!-- Added gap-4 class for spacing between tables -->
+            <!-- Regular Customers Table Section -->
+            <div class="flex-grow-1">
+                <h4 class="text-center text-primary mb-4">
+                    Regular Customers
+                    <span id="regular-customers-percentage" class="badge ms-2">0%</span> <!-- Dynamic percentage -->
+                </h4>
+                <table class="table table-striped table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Tag</th>
+                        </tr>
+                    </thead>
+                    <tbody id="regular-customers-list">
+                        <!-- Regular customers will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+            <!-- Studio Customers Table Section -->
+            <div class="flex-grow-1">
+                <h4 class="text-center text-success mb-4">
+                    Studio Customers
+                    <span id="studio-customers-percentage" class="badge ms-2">0%</span> <!-- Dynamic percentage -->
+                </h4>
+                <table class="table table-striped table-bordered">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Tag</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studio-customers-list">
+                        <!-- Studio customers will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
