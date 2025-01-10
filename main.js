@@ -13,6 +13,7 @@ const getCustomer = () => {
     .then((response) => response.text())
     .then((result) => {
         const res = JSON.parse(result);
+        console.log(res);
         let reg_customers = [], pro_customers = [];
 
         // Categorize customers into regular and studio
@@ -31,6 +32,7 @@ const getCustomer = () => {
             row.classList.add("table-info"); // Styling with Bootstrap class
 
             row.innerHTML = `
+                <td>${customer.userToken}</td>
                 <td>${customer.firstName} ${customer.lastName}</td>
                 <td>${customer.email}</td>
                 <td>${customer.tag}</td>
@@ -45,6 +47,7 @@ const getCustomer = () => {
             row.classList.add("table-success"); // Styling with Bootstrap class
 
             row.innerHTML = `
+                <td>${customer.userToken}</td>
                 <td>${customer.firstName} ${customer.lastName}</td>
                 <td>${customer.email}</td>
                 <td>${customer.tag}</td>
